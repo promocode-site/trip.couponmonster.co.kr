@@ -1,5 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
+import UpdateLog from "@/components/UpdateLog";
+import { pageDates } from "@/data/updateLog";
 import { Plane, Hotel, Ticket, Car, MapPin, CreditCard, Gift, Clock, ChevronRight, Star, Users, TrendingUp, Shield } from "lucide-react";
 import { DiscountCard, CtaButton, CopyCodeButton } from "@/components/DiscountComponents";
 import heroTravel from "@/assets/hero-travel.jpg";
@@ -34,6 +36,7 @@ const HomePage = () => (
         "name": "트립닷컴 쿠폰",
         "description": "트립닷컴 쿠폰 9월 총정리! 쿠폰부터 항공권 할인코드, 호텔 할인코드까지 지금 바로 적용 가능한 할인쿠폰이 업데이트 되었습니다.",
         "url": "https://trip.couponmonster.co.kr/",
+        ...pageDates,
         "mainEntity": {
           "@type": "ItemList",
           "itemListElement": [
@@ -582,6 +585,8 @@ const HomePage = () => (
           </div>
         </div>
       </section>
+
+      <UpdateLog />
     </main>
   </>
 );
