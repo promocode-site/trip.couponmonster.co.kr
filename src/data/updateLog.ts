@@ -1,7 +1,7 @@
 // 업데이트 내역 · 구조화 데이터 날짜 — 배포하는 날 lastUpdated와 dateModified만 바꾸면 된다.
 // (사이트맵 메인 lastmod는 public/sitemap.xml 에서 같은 날짜로 맞춘다)
-export const lastUpdated = "2026-09-27"; // 화면의 "최종 업데이트"
-export const dateModified = "2026-09-27T17:46:00+09:00";
+export const lastUpdated = "2026-10-01"; // 화면의 "최종 업데이트"
+export const dateModified = "2026-10-01T10:00:00+09:00";
 export const datePublished = "2026-04-07T18:10:19+09:00";
 
 export const heading = "트립닷컴 쿠폰 업데이트 내역";
@@ -11,6 +11,10 @@ export const publisher = { "@type": "Organization", name: "트립닷컴 쿠폰",
 
 export type UpdateLogEntry = { date: string; text: string };
 export const entries: UpdateLogEntry[] = [
+  {
+    "date": "2026-10-01",
+    "text": "호텔 전용 할인코드 TRIPH5 5%(최대 15,000원)로 변경, 토스페이 TOSSF05·TOSSH05 최대 5만원으로 조정(종료 시까지 선착순), 우리카드·BC카드·네이버 웨일 등 카드 할인 12월 31일까지로 연장"
+  },
   {
     "date": "2026-09-01",
     "text": "우리카드 WOORICARD06 등·네이버 웨일·BC카드·카카오페이 KAKAO12·토스페이 할인 9월 30일까지로 연장, 토스페이 이륙·숙박 10월 31일까지로 연장"
